@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+            text-align: center;
+            /* background-color : skyblue; */
+        }
+        #box3{
+            position: sticky;
+            /* right: 14px; */
+            top: 3px;
+        }
+        .container{
+            border: 2px solid black;
+            height: 4000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Positions : static, relative, absolute, fixed, sticky -->
+
+    <!-- relative : position relative to its original position
+    absolute : position relative to its parent's position
+    fixed : fix position relative to browser window.
+    sticky : position relative to user view. -->
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>

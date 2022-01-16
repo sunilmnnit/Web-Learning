@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Online Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <style>
+        #firstpara{
+            font-family: 'Pushster';
+            font-size: 20px;
+            background-color: burlywood;
+        }
+        .secondpara{
+            font-size: 30px;
+            background-color: pink;
+            align-items: center;
+        }
+        p{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <h2>Form Sample</h2><br>
+        <p id="firstpara">This is a Sample form about the information of Candidate. Which can be recorded for further process.</p>
+        <label for="name">Name : </label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="department">Department : </label>
+            <div>
+                <input style="color: blueviolet;" type="text" name="myDept" id="department">
+            </div>
+        <br>
+        <p class="secondpara">This is another Sample form about the information of Candidate. Which can be recorded for further process.</p>
+
+        <label for="id">ID : </label>
+        <div>
+            <input type="number" name="myId" id="id">
+        </div>
+        <br>
+        <h3 style="border-color: black; color: red; font-family: Verdana, Geneva, Tahoma, sans-serif;">Personal Information</h3>
+        <label for="email"> Email :</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+        </div><br>
+        <div>
+            Remember me : <input type="checkbox" name="remember">
+        </div><br>
+        <div>
+            <label for="progLang"> Language </label>
+            <select name="language" id="progLang">
+                <option value="java" selected> Java </option>
+                <option value="cpp"> CPP </option>
+                <option value="python"> Python </option>
+            </select>
+        </div><br>
+        <div>
+            Date of Birth : <input type="date" name="DOB">
+        </div>
+        <br>
+        <label for="aboutMe">About Yourself</label>
+        <div>
+            <textarea name="aboutYou" cols="90" rows="10" id="aboutMe"></textarea>
+        </div><br>
+        <div>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</body>
+
+</html>

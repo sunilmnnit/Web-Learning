@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float, Clear and Alignment</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            border: 5px solid rgb(116, 60, 60);
+            width: 900px;
+            margin: 10px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .item{
+            border: 2px solid brown;
+            margin: 10px;
+            padding: 8px;
+            background-color: rgb(233, 233, 233);
+        }
+        #Pencil{
+            float: left;
+            width: 46%;
+        }
+        #Pen{
+            float: left;
+            width: 45%;
+        }
+        #Rubber{
+            clear: both;
+            width: 95%;
+        }
+        h3,p{
+            text-align: justify;
+        }
+        h2{
+            margin-left: 300px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Learning Float, Clear and Alignment</h2>
+        <div id="Pencil" class="item">
+            <h3>Pencil</h3>
+            <p id="Pencilpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, totam debitis dolore laborum, illo earum quas repellendus incidunt maiores hic ipsam minus vel consequuntur fugiat voluptatum nobis. Commodi, ullam consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aspernatur exercitationem quidem ipsam quae quibusdam.</p>
+        </div>
+        <div id="Pen" class="item">
+            <h3>Pen</h3>
+            <p id="Penpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, totam debitis dolore laborum, illo earum quas repellendus incidunt maiores hic ipsam minus vel consequuntur fugiat voluptatum nobis. Commodi, ullam consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur culpa perferendis sapiente. Eaque unde ad cum. Maiores vitae modi sapiente, maxime tempora accusamus nulla!</p>
+        </div>
+        <div id="Rubber" class="item">
+            <h3>Rubber</h3>
+            <p id="Rubberpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, totam debitis dolore laborum, illo earum quas repellendus incidunt maiores hic ipsam minus vel consequuntur fugiat voluptatum nobis. Commodi, ullam consectetur. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
